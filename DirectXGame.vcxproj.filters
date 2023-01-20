@@ -59,6 +59,8 @@
     <FxCompile Include="Resources\shaders\SpriteVertexShader.hlsl">
       <Filter>シェーダー ファイル</Filter>
     </FxCompile>
+    <FxCompile Include="Resources\shaders\ObjPS.hlsl" />
+    <FxCompile Include="Resources\shaders\ObjVS.hlsl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shaders\BasicShaderHeader.hlsli">
@@ -67,6 +69,7 @@
     <None Include="Resources\shaders\SpriteShaderHeader.hlsli">
       <Filter>シェーダー ファイル</Filter>
     </None>
+    <None Include="Resources\shaders\Obj.hlsli" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sprite.h">
