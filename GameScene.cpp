@@ -35,6 +35,7 @@ void GameScene::Initialize(DirectXCommon* dxCommon, Input* input)
 	// 3Dオブジェクト生成
 	object3d = Object3d::Create();
 	object3d->Update();
+	object3d->SetEye(XMFLOAT3(0, 0, -5));
 }
 
 void GameScene::Update()
