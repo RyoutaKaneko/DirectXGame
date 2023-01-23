@@ -47,10 +47,10 @@ void GameScene::Update()
 		XMFLOAT3 position = object3d->GetPosition();
 
 		// 移動後の座標を計算
-		if (input->PushKey(DIK_UP)) { position.y += 1.0f; }
-		else if (input->PushKey(DIK_DOWN)) { position.y -= 1.0f; }
-		if (input->PushKey(DIK_RIGHT)) { position.x += 1.0f; }
-		else if (input->PushKey(DIK_LEFT)) { position.x -= 1.0f; }
+		if (input->PushKey(DIK_UP)) { position.y += 0.5f; }
+		else if (input->PushKey(DIK_DOWN)) { position.y -= 0.5f; }
+		if (input->PushKey(DIK_RIGHT)) { position.x += 0.5f; }
+		else if (input->PushKey(DIK_LEFT)) { position.x -= 0.5f; }
 
 		// 座標の変更を反映
 		object3d->SetPosition(position);
